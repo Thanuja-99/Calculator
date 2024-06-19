@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Simple Calculator</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="./style.css">
+</head> 
+<body> 
+    <div class="container mt-5"> 
+        <div class="row justify-content-center"> 
+            <div class="col-md-6"> 
+                <div class="card"> 
+                    <div class="card-header"> 
+                       <h1 style="color: rgba(27, 156, 252,1.0); font: 2em sans-serif;">Simple Calculator</h1> 
+                    </div> 
+                    <div class="card-body"> 
+                        <div class="form-group"> 
+                            <label for="number1 fw-14">Number 1:</label> 
+                            <input type="text" class="form-control" id="number1" placeholder="Enter number 1"> 
+                        </div> 
+                        <div class="form-group"> 
+                            <label for="number2">Number 2:</label> 
+                            <input type="text" class="form-control" id="number2" placeholder="Enter number 2"> 
+                        </div> 
+                        <div class="col-12">
+                            <label>Select Operator:</label><br>
+                            <button class="btn btn-info m-3 btn-lg" onclick="cal('+')">+</button> 
+                            <button class="btn btn-info m-3 btn-lg" onclick="cal('-')">-</button> 
+                            <button class="btn btn-info m-3 btn-lg" onclick="cal('*')">*</button> 
+                            <button class="btn btn-info m-3 btn-lg" onclick="cal('/')">/</button> 
+                        </div>
+                        <p id="output" class="mt-3">Result is: </p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+ 
+    <script src="./app.js"></script> 
+</body> 
+</html>
